@@ -1,0 +1,467 @@
+{
+	"variables": [],
+	"info": {
+		"name": "nodejs示例项目",
+		"_postman_id": "ac254af2-cf00-24e4-17e0-67261fdc3de2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "eggjs示例·搜索接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/page?current=1&size=10",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"page"
+					],
+					"query": [
+						{
+							"key": "current",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "size",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "startTime",
+							"value": "2022-04-07",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "endTime",
+							"value": "2022-04-08",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMXg2N3ZubTcwZyIsImNyZWF0ZWQiOjE2NDk3Mjg4MjYsImp0aSI6IjAxRzBEUjBCSkI4MDVFWDFHODFZRUY5UzdUIn0.o6se2Cu5UQErE03yefldOfXXnUaLePhidn7BgkveCGE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eggjs示例·新增接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/insert?",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"insert"
+					],
+					"query": [
+						{
+							"key": "measureName",
+							"value": "测试",
+							"disabled": true
+						},
+						{
+							"key": "talentValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "jobValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMXg2N3ZubTcwZyIsImNyZWF0ZWQiOjE2NDkzODc0MjgsImp0aSI6IjAxRzAzSkRQS05OTVFEMFlBWlYyV1lHREoxIn0.k3nnSIqI-OVQXZpxMegxFt_5R3oTByCfr4B18OhU_yc",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"measureName\": \"111测试测试\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eggjs示例·删除接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/delete?",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "measureName",
+							"value": "测试",
+							"disabled": true
+						},
+						{
+							"key": "talentValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "jobValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMXg2N3ZubTcwZyIsImNyZWF0ZWQiOjE2NDkzODc0MjgsImp0aSI6IjAxRzAzSkRQS05OTVFEMFlBWlYyV1lHREoxIn0.k3nnSIqI-OVQXZpxMegxFt_5R3oTByCfr4B18OhU_yc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eggjs示例·更新接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/update?",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"update"
+					],
+					"query": [
+						{
+							"key": "measureName",
+							"value": "测试",
+							"disabled": true
+						},
+						{
+							"key": "talentValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "jobValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMXg2N3ZubTcwZyIsImNyZWF0ZWQiOjE2NDkzODc0MjgsImp0aSI6IjAxRzAzSkRQS05OTVFEMFlBWlYyV1lHREoxIn0.k3nnSIqI-OVQXZpxMegxFt_5R3oTByCfr4B18OhU_yc",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"100\",\r\n    \"data\": {\r\n        \"measureName\":\"2222\"\r\n    }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eggjs示例·获取详情接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/detail?id=7",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMXg2N3ZubTcwZyIsImNyZWF0ZWQiOjE2NDkzODc0MjgsImp0aSI6IjAxRzAzSkRQS05OTVFEMFlBWlYyV1lHREoxIn0.k3nnSIqI-OVQXZpxMegxFt_5R3oTByCfr4B18OhU_yc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eggjs示例·批量保存接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/saveBatch?",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"saveBatch"
+					],
+					"query": [
+						{
+							"key": "measureName",
+							"value": "测试",
+							"disabled": true
+						},
+						{
+							"key": "talentValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "jobValuationId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMXg2N3ZubTcwZyIsImNyZWF0ZWQiOjE2NDkzODc0MjgsImp0aSI6IjAxRzAzSkRQS05OTVFEMFlBWlYyV1lHREoxIn0.k3nnSIqI-OVQXZpxMegxFt_5R3oTByCfr4B18OhU_yc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"list\": [\r\n        {\r\n            \"measureId\": \"6\",\r\n            \"measureName\": \"111\"\r\n        },\r\n        {\r\n            \"measureId\": \"7\",\r\n            \"measureName\": \"2222\"\r\n        }\r\n    ]\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eggjs示例·请求其他服务接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/fetchOtherService",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"fetchOtherService"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsY25zaW00aWE2OCIsImNyZWF0ZWQiOjE2NTA5NTcxNzgsImp0aSI6IjAxRzFKQkVOWFY5OTk2OThHS1BFNkEwTTYyIn0.-9BARRmi53y61Iv1JDymsiTB8JHdW_RTUjVYD8xpX44",
+						"description": ""
+					},
+					{
+						"key": "x-linkkap-entid",
+						"value": "b2811osnjsq",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eggjs示例·通知其他服务接口 copy",
+			"request": {
+				"url": {
+					"raw": "{{domain}}/webapi/node-frame/v1/notify?planId=ji54z1bd69s",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"webapi",
+						"node-frame",
+						"v1",
+						"notify"
+					],
+					"query": [
+						{
+							"key": "planId",
+							"value": "ji54z1bd69s",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiMXg2N3ZubTcwZyIsImNyZWF0ZWQiOjE2NDkzODc0MjgsImp0aSI6IjAxRzAzSkRQS05OTVFEMFlBWlYyV1lHREoxIn0.k3nnSIqI-OVQXZpxMegxFt_5R3oTByCfr4B18OhU_yc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "事务测试",
+			"request": {
+				"url": "{{domain}}/webapi/node-frame/v1/transactionProcessing",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

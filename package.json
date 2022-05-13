@@ -1,0 +1,63 @@
+{
+  "name": "node-frame",
+  "version": "1.0.0",
+  "description": "demo",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "big-integer": "^1.6.51",
+    "dubbo2.js": "^2.3.9",
+    "egg": "^2.15.1",
+    "egg-mysql": "^3.0.0",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-swagger-doc-feat": "^2.2.14",
+    "eggjs-nacos": "^1.1.6",
+    "js-to-java": "^2.7.0",
+    "mysql2": "^2.3.0",
+    "node-machine-id": "^1.1.12",
+    "xlsx": "^0.17.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0",
+    "iconv-lite": "^0.6.3",
+    "mysql": "^2.18.1",
+    "sequelize-auto": "^0.8.4",
+    "sequelize-cli": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-node-frame --ignore-stderr --env=dev",
+    "stop": "egg-scripts stop --title=egg-server-node-frame",
+    "dev": "egg-bin dev --env=local",
+    "prod": "egg-scripts start --daemon --title=egg-server-node-frame --env=prod",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && NODE_ENV=test npx sequelize db:migrate && npm run cov",
+    "autod": "autod",
+    "postinstall": "node ./scripts/autoModels && node ./scripts/init"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ouyang",
+  "license": "MIT"
+}
